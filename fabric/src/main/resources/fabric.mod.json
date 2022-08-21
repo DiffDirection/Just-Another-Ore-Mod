@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "jaom",
+  "version": "${version}",
+  "name": "Just Another Ore Mod",
+  "description": "This is a mod for Just Another Mod Pack",
+  "authors": [
+    "Ru_Kira",
+    "Keeper317",
+    "Scyu_"
+  ],
+  "contact": {
+    "homepage": "https://differentdirection.us/",
+    "sources": "https://github.com/DiffDirection/Just-Another-Ore-Mod"
+  },
+  "license": "MIT",
+  "icon": "assets/jaom/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "us.differentdirection.jaom.fabric.JAOreModFabric"
+    ]
+  },
+  "mixins": [
+    "jaom.mixins.json",
+    "jaom-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.19.2",
+    "architectury": ">=6.2.43"
+  }
+}
