@@ -7,7 +7,7 @@ import net.minecraft.world.level.material.Material;
 public class OreObjectBuilder {
     private String name;
     private BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties.of(Material.STONE).strength(1.5f).requiresCorrectToolForDrops();
-    private Item.Properties itemProperties = new Item.Properties();//.tab(JARegistry.JAOM_TAB);
+    private Item.Properties itemProperties = new Item.Properties().tab(JARegistry.JAOM_TAB);
     private Boolean hasNugget = true;
     private MiningLevel miningLevel = MiningLevel.IRON;
 

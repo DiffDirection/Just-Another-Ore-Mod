@@ -19,10 +19,10 @@ public class OreObject {
     public OreObject(String name, BlockBehaviour.Properties blockProperties, Item.Properties itemProperties, Boolean hasNugget, MiningLevel miningLevel) {
         this.NAME = name;
         this.hasNugget = hasNugget;
-        this.INGOT = new Item(itemProperties.tab(JARegistry.JAOM_TAB)); // TOBEDECIDED
+        this.INGOT = new Item(itemProperties);
         if (hasNugget)
-            this.NUGGET = new Item(itemProperties.tab(JARegistry.JAOM_TAB)); // TOBEDECIDED
-        this.RAW = new Item(itemProperties.tab(JARegistry.JAOM_TAB)); // TOBEDECIDED
+            this.NUGGET = new Item(itemProperties);
+        this.RAW = new Item(itemProperties);
         this.ORE = new Block(blockProperties.sound(SoundType.STONE));
         this.STORAGE = new Block(blockProperties.sound(SoundType.METAL));
 
