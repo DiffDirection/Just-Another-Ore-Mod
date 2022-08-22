@@ -15,10 +15,9 @@ public class OreMananger {
 
     public static void addOres() {
         OreObject aluminum = new OreObjectBuilder().setName("aluminum").setMiningLevel(MiningLevel.STONE).build();
-        TAB_ICON = aluminum.INGOT;
         ores.add(aluminum);
 
-        ores.add(new OreObjectBuilder().setName("cobalt").setMiningLevel(MiningLevel.DIAMOND).build());
+        /*ores.add(new OreObjectBuilder().setName("cobalt").setMiningLevel(MiningLevel.DIAMOND).build());
         ores.add(new OreObjectBuilder().setName("platinum").setMiningLevel(MiningLevel.DIAMOND).build());
         ores.add(new OreObjectBuilder().setName("thorium").setMiningLevel(MiningLevel.DIAMOND).build());
 
@@ -40,6 +39,6 @@ public class OreMananger {
 
         ores.add(new OreObjectBuilder().setName("ruby").setHasNugget(false).build());
         ores.add(new OreObjectBuilder().setName("sapphire").setHasNugget(false).build());
-        ores.add(new OreObjectBuilder().setName("silicon").setHasNugget(false).build());
+        ores.add(new OreObjectBuilder().setName("silicon").setHasNugget(false).build());/**/
     }
 }

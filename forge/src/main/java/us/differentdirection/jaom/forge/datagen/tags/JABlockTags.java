@@ -17,7 +17,8 @@ public class JABlockTags extends BlockTagsProvider {
 
     @Override
     protected void addTags() {
-        OreMananger.ores.forEach(oreObject -> {
+        OreMananger OM = new OreMananger();
+        OM.ores.forEach(oreObject -> {
             tag(Tags.Blocks.ORES).add(oreObject.ORE);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(oreObject.ORE);
             tag(BlockTags.create(new ResourceLocation("forge:ores/" + oreObject.NAME))).add(oreObject.ORE);

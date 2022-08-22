@@ -37,6 +37,6 @@ public class OreObjectBuilder {
     }
 
     public OreObject build() {
-        return new OreObject(name, blockProperties, itemProperties, hasNugget, miningLevel);
+        return new OreObject(name, hasNugget, miningLevel);
     }
 }

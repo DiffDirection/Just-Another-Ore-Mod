@@ -22,7 +22,8 @@ public class JAItemTags extends ItemTagsProvider {
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
 
-        OreMananger.ores.forEach(oreObject -> {
+        OreMananger OM = new OreMananger();
+        OM.ores.forEach(oreObject -> {
             copy(BlockTags.create(new ResourceLocation("forge:ore/" + oreObject.NAME)), ItemTags.create(new ResourceLocation("forge:ore/" + oreObject.NAME)));
             tag(ItemTags.create(new ResourceLocation("forge:ingots/" + oreObject.NAME))).add(oreObject.INGOT);
             if (oreObject.hasNugget) tag(ItemTags.create(new ResourceLocation("forge:nuggets/" + oreObject.NAME))).add(oreObject.NUGGET);

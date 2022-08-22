@@ -13,6 +13,7 @@ public class JAItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
         OreMananger.ores.forEach(oreObject -> {
             singleTexture(oreObject.NAME + "_ingot", mcLoc("item/generated"), "layer0", modLoc("item/ingot/" + oreObject.NAME + "_ingot"));
             if (oreObject.hasNugget)
