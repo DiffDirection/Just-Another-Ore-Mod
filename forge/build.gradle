@@ -16,6 +16,11 @@ loom {
 
         mixinConfig "jaom-common.mixins.json"
         mixinConfig "jaom.mixins.json"
+
+
+        dataGen {
+            mod "jaom"
+        }
     }
 }
 
