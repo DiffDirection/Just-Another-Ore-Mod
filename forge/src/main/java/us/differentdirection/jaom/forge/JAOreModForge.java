@@ -11,7 +11,7 @@ public class JAOreModForge {
     public JAOreModForge() {
         // Submit our event bus to let architectury register our content on the right time
         EventBuses.registerModEventBus(JAOreMod.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
-        JARegistry.init();
         JAOreMod.init();
+        JARegistry.init();
     }
 }

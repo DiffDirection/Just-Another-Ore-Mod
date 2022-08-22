@@ -40,8 +40,8 @@ public class JARegistry {
 
     public static void init() {
         //registerOres();
-        RegistrySupplier<Item> lithium = ITEMS.register(new ResourceLocation(MOD_ID, "lithium_ingot"), ()-> new Item(new Item.Properties()));
-        RegistrySupplier<Item> aluminum = ITEMS.register(new ResourceLocation(MOD_ID, OreMananger.ores.get(0).NAME + "_ingot"), () -> new Item(new Item.Properties()));
+        //RegistrySupplier<Item> lithium = ITEMS.register(new ResourceLocation(MOD_ID, "lithium_ingot"), ()-> new Item(new Item.Properties()));
+       // RegistrySupplier<Item> aluminum = ITEMS.register(new ResourceLocation(MOD_ID, OreMananger.ores.get(0).NAME + "_ingot"), () -> new Item(new Item.Properties()));
     }
 
     private static void registerOres() {

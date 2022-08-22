@@ -15,9 +15,10 @@ public class OreMananger {
 
     public static void addOres() {
         OreObject aluminum = new OreObjectBuilder().setName("aluminum").setMiningLevel(MiningLevel.STONE).build();
+        TAB_ICON = aluminum.INGOT.get();
         ores.add(aluminum);
 
-        /*ores.add(new OreObjectBuilder().setName("cobalt").setMiningLevel(MiningLevel.DIAMOND).build());
+        ores.add(new OreObjectBuilder().setName("cobalt").setMiningLevel(MiningLevel.DIAMOND).build());
         ores.add(new OreObjectBuilder().setName("platinum").setMiningLevel(MiningLevel.DIAMOND).build());
         ores.add(new OreObjectBuilder().setName("thorium").setMiningLevel(MiningLevel.DIAMOND).build());
 
