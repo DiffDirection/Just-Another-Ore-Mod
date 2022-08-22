@@ -1,6 +1,0 @@
-{
-"parent": "block/cube_all",
-"textures": {
-  "all": "jaom:block/storage/lithium_block"
-  }
-}
