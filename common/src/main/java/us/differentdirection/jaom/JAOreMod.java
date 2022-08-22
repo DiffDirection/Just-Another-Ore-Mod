@@ -6,6 +6,6 @@ public class JAOreMod {
     public static final String MOD_ID = "jaom";
     
     public static void init() {
-        OreMananger.addOres();
+        //OreMananger.addOres();
     }
 }
