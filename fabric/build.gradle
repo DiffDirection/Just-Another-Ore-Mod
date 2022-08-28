@@ -6,9 +6,28 @@ architectury {
     platformSetupLoomIde()
     fabric()
 }
-
+sourceSets {
+    main {
+        resources {
+            srcDirs += [
+                    "src/generated/resources"
+            ]
+        }
+    }
+}
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
+
+    runs {
+        data {
+            client()
+            name "Minecraft Data"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+//            vmArg "-Dfabric-api.datagen.strict-validation"
+            source sourceSets.main
+        }
+    }
 }
 
 configurations {
@@ -48,7 +67,7 @@ remapJar {
     injectAccessWidener = true
     input.set shadowJar.archiveFile
     dependsOn shadowJar
-    classifier null
+    classifier 'fabric'
 }
 
 jar {

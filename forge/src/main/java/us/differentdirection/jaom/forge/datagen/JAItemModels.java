@@ -1,10 +1,10 @@
 package us.differentdirection.jaom.forge.datagen;
 
-import us.differentdirection.jaom.JAOreMod;
-import us.differentdirection.jaom.manager.OreMananger;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import us.differentdirection.jaom.JAOreMod;
+import us.differentdirection.jaom.manager.OreManager;
 
 public class JAItemModels extends ItemModelProvider {
     public JAItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
@@ -13,7 +13,7 @@ public class JAItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        OreMananger.ores.forEach(oreObject -> {
+        OreManager.ores.forEach(oreObject -> {
             singleTexture(oreObject.NAME + "_ingot", mcLoc("item/generated"), "layer0", modLoc("item/ingot/" + oreObject.NAME + "_ingot"));
             if (oreObject.hasNugget)
                 singleTexture(oreObject.NAME + "_nugget", mcLoc("item/generated"), "layer0", modLoc("item/nugget/" + oreObject.NAME + "_nugget"));

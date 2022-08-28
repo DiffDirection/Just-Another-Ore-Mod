@@ -1,0 +1,28 @@
+{
+  "values": [
+    "jaom:lithium_ore",
+    "jaom:lithium_block",
+    "jaom:magnesium_ore",
+    "jaom:magnesium_block",
+    "jaom:mercury_ore",
+    "jaom:mercury_block",
+    "jaom:phosphorus_ore",
+    "jaom:phosphorus_block",
+    "jaom:plutonium_ore",
+    "jaom:plutonium_block",
+    "jaom:silver_ore",
+    "jaom:silver_block",
+    "jaom:titanium_ore",
+    "jaom:titanium_block",
+    "jaom:tungsten_ore",
+    "jaom:tungsten_block",
+    "jaom:uranium_ore",
+    "jaom:uranium_block",
+    "jaom:ruby_ore",
+    "jaom:ruby_block",
+    "jaom:sapphire_ore",
+    "jaom:sapphire_block",
+    "jaom:silicon_ore",
+    "jaom:silicon_block"
+  ]
+}

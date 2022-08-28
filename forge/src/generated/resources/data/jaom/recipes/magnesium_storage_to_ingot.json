@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jaom:magnesium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "jaom:magnesium_ingot"
+  }
+}

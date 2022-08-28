@@ -1,0 +1,25 @@
+{
+  "values": [
+    "jaom:aluminum_block",
+    "jaom:cobalt_block",
+    "jaom:platinum_block",
+    "jaom:thorium_block",
+    "jaom:copper_block",
+    "jaom:nickle_block",
+    "jaom:sodium_block",
+    "jaom:tin_block",
+    "jaom:zinc_block",
+    "jaom:lithium_block",
+    "jaom:magnesium_block",
+    "jaom:mercury_block",
+    "jaom:phosphorus_block",
+    "jaom:plutonium_block",
+    "jaom:silver_block",
+    "jaom:titanium_block",
+    "jaom:tungsten_block",
+    "jaom:uranium_block",
+    "jaom:ruby_block",
+    "jaom:sapphire_block",
+    "jaom:silicon_block"
+  ]
+}

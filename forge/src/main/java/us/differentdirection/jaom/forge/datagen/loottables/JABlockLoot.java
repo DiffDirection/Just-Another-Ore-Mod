@@ -1,12 +1,11 @@
 package us.differentdirection.jaom.forge.datagen.loottables;
 
-import us.differentdirection.jaom.manager.OreMananger;
-import us.differentdirection.jaom.registry.JARegistry;
+import com.google.common.collect.Streams;
+import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.data.loot.BlockLoot;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.storage.loot.LootTable;
 import org.jetbrains.annotations.NotNull;
+import us.differentdirection.jaom.manager.OreManager;
 
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -15,16 +14,18 @@ public class JABlockLoot extends BlockLoot {
 
     @Override
     protected void addTables() {
-        OreMananger.ores.forEach(oreObject -> {
-            dropSelf(oreObject.STORAGE);
-            this.add(oreObject.ORE, createOreDrop(oreObject.ORE, oreObject.RAW));
+        OreManager.ores.forEach(oreObject -> {
+            dropSelf(oreObject.STORAGE.get());
+            this.add(oreObject.ORE.get(), createOreDrop(oreObject.ORE.get(), oreObject.RAW.get()));
         });
-
     }
 
-//    @Override
-//    protected @NotNull Iterable<Block> getKnownBlocks() {
-//        return JARegistry.BLOCKS.getRegistries().;
-//    }
+    @Override
+    protected @NotNull Iterable<Block> getKnownBlocks() {
+        return Streams.concat(
+                OreManager.ores.stream().map(ore -> ore.STORAGE).filter(RegistrySupplier::isPresent),
+                OreManager.ores.stream().map(ore -> ore.ORE).filter(RegistrySupplier::isPresent)
+        ).map(Supplier::get).collect(Collectors.toList());
+    }
 
 }

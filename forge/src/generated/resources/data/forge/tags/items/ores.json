@@ -1,0 +1,25 @@
+{
+  "values": [
+    "jaom:aluminum_ore",
+    "jaom:cobalt_ore",
+    "jaom:platinum_ore",
+    "jaom:thorium_ore",
+    "jaom:copper_ore",
+    "jaom:nickle_ore",
+    "jaom:sodium_ore",
+    "jaom:tin_ore",
+    "jaom:zinc_ore",
+    "jaom:lithium_ore",
+    "jaom:magnesium_ore",
+    "jaom:mercury_ore",
+    "jaom:phosphorus_ore",
+    "jaom:plutonium_ore",
+    "jaom:silver_ore",
+    "jaom:titanium_ore",
+    "jaom:tungsten_ore",
+    "jaom:uranium_ore",
+    "jaom:ruby_ore",
+    "jaom:sapphire_ore",
+    "jaom:silicon_ore"
+  ]
+}

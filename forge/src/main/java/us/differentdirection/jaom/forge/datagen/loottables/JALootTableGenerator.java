@@ -31,9 +31,7 @@ public class JALootTableGenerator extends LootTableProvider {
     }
 
     @Override
-    protected void validate(Map<ResourceLocation, LootTable> map, ValidationContext validationtracker) {
-        map.forEach((p_218436_2_, p_218436_3_) -> {
-            LootTables.validate(validationtracker, p_218436_2_, p_218436_3_);
-        });
+    protected void validate(Map<ResourceLocation, LootTable> map, ValidationContext validationTracker) {
+        map.forEach((id, table) -> LootTables.validate(validationTracker, id, table));
     }
 }

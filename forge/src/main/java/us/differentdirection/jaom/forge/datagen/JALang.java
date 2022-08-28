@@ -1,8 +1,8 @@
 package us.differentdirection.jaom.forge.datagen;
 
-import us.differentdirection.jaom.manager.OreMananger;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
+import us.differentdirection.jaom.manager.OreManager;
 
 import static us.differentdirection.jaom.JAOreMod.MOD_ID;
 
@@ -22,8 +22,8 @@ public class JALang extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add("itemGroup.jaom", "JOAM");
-        OreMananger.ores.forEach(oreObject -> {
+        add("itemGroup.jaom.jaom_tab", "Just Another Ore Mod");
+        OreManager.ores.forEach(oreObject -> {
             add("block.jaom." + oreObject.NAME + "_ore", capitalize(oreObject.NAME) + " Ore");
             add("block.jaom." + oreObject.NAME + "_block", capitalize(oreObject.NAME) + " Block");
             add("item.jaom." + oreObject.NAME + "_ingot", capitalize(oreObject.NAME) + " Ingot");

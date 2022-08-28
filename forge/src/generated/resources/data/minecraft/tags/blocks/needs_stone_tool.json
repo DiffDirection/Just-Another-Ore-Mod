@@ -1,0 +1,16 @@
+{
+  "values": [
+    "jaom:aluminum_ore",
+    "jaom:aluminum_block",
+    "jaom:copper_ore",
+    "jaom:copper_block",
+    "jaom:nickle_ore",
+    "jaom:nickle_block",
+    "jaom:sodium_ore",
+    "jaom:sodium_block",
+    "jaom:tin_ore",
+    "jaom:tin_block",
+    "jaom:zinc_ore",
+    "jaom:zinc_block"
+  ]
+}

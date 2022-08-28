@@ -3,7 +3,6 @@
   "package": "us.differentdirection.jaom.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "MixinTitleScreen"
   ],
   "mixins": [
   ],

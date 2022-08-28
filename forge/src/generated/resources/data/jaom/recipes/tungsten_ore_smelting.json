@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 2.0,
+  "ingredient": {
+    "item": "jaom:raw_tungsten"
+  },
+  "result": "jaom:tungsten_ingot"
+}

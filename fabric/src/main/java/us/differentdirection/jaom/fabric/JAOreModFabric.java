@@ -1,7 +1,7 @@
 package us.differentdirection.jaom.fabric;
 
-import us.differentdirection.jaom.JAOreMod;
 import net.fabricmc.api.ModInitializer;
+import us.differentdirection.jaom.JAOreMod;
 
 public class JAOreModFabric implements ModInitializer {
     @Override
